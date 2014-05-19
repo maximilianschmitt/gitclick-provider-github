@@ -1,0 +1,36 @@
+{
+  "name": "gitclick-provider-github",
+  "version": "0.0.1",
+  "main": "lib/gitclick-provider-github.js",
+  "description": "GitHub plugin for gitclick.",
+  "keywords": [
+    "gitclick",
+    "gitclick-provider",
+    "gitclick-plugin",
+    "github",
+    "git"
+  ],
+  "homepage": "https://github.com/maximilianschmitt/gitclick-provider-github",
+  "bugs": "https://github.com/maximilianschmitt/gitclick-provider-github/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Maximilian Schmitt",
+    "email": "maximilian.schmitt@googlemail.com",
+    "url": "http://maximilianschmitt.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maximilianschmitt/gitclick-provider-github.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "github": "^0.1.16",
+    "underscore": "^1.6.0",
+    "bluebird": "^1.2.4"
+  },
+  "devDependencies": {
+    "rewire": "^2.0.0"
+  }
+}
