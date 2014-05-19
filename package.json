@@ -1,6 +1,6 @@
 {
   "name": "gitclick-provider-github",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/gitclick-provider-github.js",
   "description": "GitHub plugin for gitclick.",
   "keywords": [
@@ -26,11 +26,13 @@
     "test": "mocha"
   },
   "dependencies": {
+    "gitclick-util": "0.0.1",
     "github": "^0.1.16",
     "underscore": "^1.6.0",
     "bluebird": "^1.2.4"
   },
   "devDependencies": {
+    "gitclick-test-util": "0.0.1",
     "rewire": "^2.0.0"
   }
 }
