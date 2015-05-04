@@ -1,10 +1,8 @@
-/* global describe, it, before, beforeEach, after */
 'use strict';
 
-var rewire         = require('rewire');
-var testUtil       = require('gitclick-test-util');
+var proxyquire = require('proxyquire');
+var testUtil = require('gitclick-test-util');
+var ApiMock = require('./api-mock');
+var githubProvider = proxyquire('../lib/gitclick-provider-github', { 'github': ApiMock });
 
-var GithubProvider = rewire('../lib/gitclick-provider-github');
-GithubProvider.__set__('Api', require('./api-mock'));
-
-testUtil.testProvider(GithubProvider);
+testUtil.testProvider('githubProvider', githubProvider);
