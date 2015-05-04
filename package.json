@@ -33,7 +33,7 @@
     "underscore": "^1.6.0"
   },
   "devDependencies": {
-    "gitclick-test-util": "^0.1.0",
+    "gitclick-test-util": "^0.1.1",
     "proxyquire": "^1.4.0"
   }
 }
