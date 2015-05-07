@@ -1,6 +1,6 @@
 {
   "name": "gitclick-provider-github",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib/gitclick-provider-github.js",
   "description": "GitHub plugin for gitclick.",
   "keywords": [
