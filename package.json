@@ -27,10 +27,8 @@
   },
   "dependencies": {
     "bluebird": "^1.2.4",
-    "gitclick-util": "0.0.1",
     "github": "^0.1.16",
-    "inquirer": "^0.8.2",
-    "underscore": "^1.6.0"
+    "inquirer": "^0.8.2"
   },
   "devDependencies": {
     "gitclick-test-util": "^0.2.0",
