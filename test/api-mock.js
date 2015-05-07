@@ -9,6 +9,20 @@ ApiMock.__predefined__ = {
 ApiMock.prototype = {
   authenticate: function() {},
   repos: {
+    createFromOrg: function(request, cb) {
+      cb(null, {
+        name: request.name,
+        owner: {
+          login: request.org 
+        },
+        has_issues: request.has_issues,
+        private: request.private,
+        has_wiki: request.has_wiki,
+        clone_url: 'https://github.com/' + request.org + '/' + request.name + '/',
+        ssh_url: 'git@github.com:' + request.org + '/' + request.name + '/',
+        git_url: 'git://github.com/' + request.org + '/' + request.name + '/'
+      });
+    },
     create: function(request, cb) {
       cb(null, {
         name: request.name,
